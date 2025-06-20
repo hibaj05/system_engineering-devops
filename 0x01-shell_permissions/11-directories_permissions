@@ -1,12 +1,2 @@
 #!/bin/bash
-# This script adds execute permission to all subdirectories
-# for the owner, group owner, and all other users.
-# Regular files are explicitly not changed.
-
-# The 'X' permission mode (uppercase X) adds execute permission
-# only if the file is a directory or already has execute permission for some user.
-# In this case, we're applying it to all files and directories,
-# but it will only effectively add execute permission to directories
-# (or files that are already executable, which is okay as they already have it).
-
 chmod a+X *
