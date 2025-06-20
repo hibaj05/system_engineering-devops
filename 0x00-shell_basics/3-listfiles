@@ -1,2 +1,6 @@
+
 #!/bin/bash
-ls -l # Temporary change
+# This script displays the current directory contents in a long format.
+
+ls -l
+
