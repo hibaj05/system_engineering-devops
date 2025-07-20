@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$PATH" | sed 's/::\+/:_:/g' | tr ':' '\n' | grep -v '^$' | wc -l
+echo "$PATH" | grep -oE '[^:]+|::+' | wc -l
