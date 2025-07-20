@@ -1,0 +1,18 @@
+total 28
+-rw-r--r-- 1 user 197609  12 Jul 20 15:57 *"Best School"*$?*****:)
+drwxr-xr-x 1 user 197609   0 Jul 20 16:32 .
+drwxr-xr-x 1 user 197609   0 Jul 20 13:28 ..
+-rwxr-xr-x 1 user 197609  34 Jul 20 13:28 0-hello_world
+-rwxr-xr-x 1 user 197609  34 Jul 20 15:28 1-confused_smiley
+-rwxr-xr-x 1 user 197609  50 Jul 20 13:28 10-no_more_js
+-rwxr-xr-x 1 user 197609  30 Jul 20 13:28 2-hellofile
+-rwxr-xr-x 1 user 197609  41 Jul 20 15:21 3-twofiles
+-rwxr-xr-x 1 user 197609  37 Jul 20 13:28 4-lastlines
+-rwxr-xr-x 1 user 197609  37 Jul 20 13:28 5-firstlines
+-rwxr-xr-x 1 user 197609  41 Jul 20 15:44 6-third_line
+-rwxr-xr-x 1 user 197609  82 Jul 20 16:27 7-file
+-rwxr-xr-x 1 user 197609  36 Jul 20 16:32 8-cwd_state
+-rwxr-xr-x 1 user 197609  39 Jul 20 13:28 9-duplicate_last_line
+-rw-r--r-- 1 user 197609  41 Jul 20 13:28 README.md
+-rw-r--r-- 1 user 197609 743 Jul 20 15:45 iacta
+-rw-r--r-- 1 user 197609   0 Jul 20 16:32 ls_cwd_content
