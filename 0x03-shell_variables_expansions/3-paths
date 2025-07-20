@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 echo "$PATH" | tr ":" "\\n" | wc -l
+=======
+echo "$PATH" | grep -oE '[^:]+|::+' | wc -l
+>>>>>>> 4677b84f1eae3c7818fbf534635782844cacfaa5
