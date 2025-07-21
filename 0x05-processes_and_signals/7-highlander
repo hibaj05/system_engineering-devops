@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
+# This script displays a message and traps SIGTERM to print a custom message
 
-# Function to handle SIGTERM
+# Trap SIGTERM and print a message
 trap 'echo "I am invincible!!!"' SIGTERM
 
 # Infinite loop
