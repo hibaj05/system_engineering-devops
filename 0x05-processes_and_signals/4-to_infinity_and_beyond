@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script continuously displays "To infinity and beyond" indefinitely,
+# pausing for 2 seconds between each display.
+# Press Ctrl+C to stop its execution.
+
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done
