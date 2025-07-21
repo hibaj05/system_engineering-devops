@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# This script lists filenames (excluding hidden ones), showing only the part after the first dash
+# This script displays filenames, and if they contain '-', it strips everything before and including the first dash
 
-for file in *; do
+for file in $(ls -1 | sort); do
   if [[ "$file" == *-* ]]; then
     echo "${file#*-}"
+  else
+    echo "$file"
   fi
 done
