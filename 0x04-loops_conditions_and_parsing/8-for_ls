@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# This script lists all non-hidden files in the current directory, sorted, and displays only the part after '-' if present
+# This script displays filenames, and if they contain '-', it strips everything before and including the first dash
 
-find . -maxdepth 1 -type f ! -name ".*" -printf "%f\n" | sort | while IFS= read -r file; do
+for file in $(ls -1 | sort); do
   if [[ "$file" == *-* ]]; then
     echo "${file#*-}"
   else
