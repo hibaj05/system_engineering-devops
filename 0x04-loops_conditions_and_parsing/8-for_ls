@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
-# This script displays filenames, and if they contain '-', it strips everything before and including the first dash
+# This script displays the content of the current directory,
+# listing only the part of the name after the first dash (-).
+# It uses a for loop and does not display hidden files.
 
-for file in $(ls -1 | sort); do
-  if [[ "$file" == *-* ]]; then
-    echo "${file#*-}"
-  else
-    echo "$file"
-  fi
+for file in *; do
+    if [ -f "$file" ]; then
+        if [[ "$file" == *-* ]]; then
+            echo "${file#*-}"
+        fi
+    fi
 done
 
