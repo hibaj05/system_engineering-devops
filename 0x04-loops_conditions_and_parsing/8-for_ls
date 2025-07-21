@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 # This script displays the content of the current directory,
-# listing only the part of the name after the first dash (-).
+# listing only the part of the name after the first dash (-) if a dash exists,
+# otherwise displaying the full filename.
 # It uses a for loop and does not display hidden files.
 
 for file in *; do
-    if [ -f "" ]; then
-        echo ""
+    if [ -f "$file" ]; then
+        if [[ "$file" == *-* ]]; then
+            echo "${file#*-}"
+        else
+            echo "$file"
+        fi
     fi
 done
+
