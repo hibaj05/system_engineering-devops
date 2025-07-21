@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-# This script displays "To infinity and beyond" indefinitely, pausing for 2 seconds.
-# It handles the SIGTERM signal by printing "I am invincible!!!" and continuing its loop.
+# This script displays a message and traps SIGTERM to print a custom message
 
-trap "echo 'I am invincible!!!'" SIGTERM
+# Trap SIGTERM and print a message
+trap 'echo "I am invincible!!!"' SIGTERM
 
+# Infinite loop
 while true; do
-    echo "To infinity and beyond"
-    sleep 2
+  echo "To infinity and beyond"
+  sleep 2
 done
