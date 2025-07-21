@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script forcibly terminates the '7-highlander' process using SIGKILL (signal 9).
+# It finds the PID of the target script using 'pkill -f' and sends the SIGKILL signal.
+# 'pkill -f' matches the full command line.
+# '-9' specifies the SIGKILL signal.
+
+pkill -9 -f "7-highlander"
